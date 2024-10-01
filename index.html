@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Flower Form</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #ff69b4;
+            font-size: 3em;
+            margin-top: 30px;
+        }
+
+        .form-container {
+            background-color: #fff0f5;
+            padding: 20px;
+            margin: 50px auto;
+            width: 50%;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-size: 1.2em;
+            color: #ff1493;
+        }
+
+        input[type="text"], select {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 2px solid #ff69b4;
+            font-size: 1em;
+        }
+
+        input[type="submit"] {
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ff1493;
+        }
+
+        .flower-image {
+            width: 100px;
+            height: auto;
+            margin: 20px;
+        }
+
+        .flowers {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to the Registration Flower Form!</h1>
+
+    <div class="flowers">
+        <img src="https://example.com/flower1.jpg" alt="Flower 1" class="flower-image">
+        <img src="https://example.com/flower2.jpg" alt="Flower 2" class="flower-image">
+        <img src="https://example.com/flower3.jpg" alt="Flower 3" class="flower-image">
+    </div>
+
+    <div class="form-container">
+        <form action="#" method="post">
+            <label for="first-name">First Name:</label><br>
+            <input type="text" id="first-name" name="first-name" required><br>
+
+            <label for="last-name">Last Name:</label><br>
+            <input type="text" id="last-name" name="last-name" required><br>
+
+            <label for="education">Education:</label><br>
+            <select id="education" name="education" required>
+                <option value="">--Select--</option>
+                <option value="high-school">High School</option>
+                <option value="bachelor">Bachelor's Degree</option>
+                <option value="master">Master's Degree</option>
+                <option value="doctorate">Doctorate</option>
+            </select><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html>
